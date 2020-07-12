@@ -71,5 +71,5 @@ traitlets==4.3.2
 underthesea==1.1.15
 wavio==0.0.4
 wcwidth==0.1.7
-Werkzeug==0.15.2
+Werkzeug==0.15.3
 wrapt==1.11.1
