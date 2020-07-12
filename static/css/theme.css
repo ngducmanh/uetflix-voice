@@ -1,0 +1,28 @@
+html {
+    font-family: acumin-pro, system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+}
+
+.header {
+    background: #9b4dca;
+    font-family: acumin-pro;
+    font-weight: 100;
+    color: #fff;
+    box-shadow: 0px 13px 35px -12px rgba(155, 77, 202, .35);
+    font-size: 2rem;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+}
+
+li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+li>a {
+    margin: 0 1rem;
+}
+
+#spinner {
+    display: none;
+}

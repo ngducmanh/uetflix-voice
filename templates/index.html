@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.6.0">
+    <title>Voice recognition</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uzs2zbt.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/record.js') }}"></script>
+    <div class="header">
+        <div class="container">
+            Voice recognition
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" id="spinner" role="status" style="width: 3rem; height: 3rem;">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-2">
+        <button class="button button-outline" id="recordButton">Start record</button>
+        <button class="button button-outline" id="stopButton">Stop record</button>
+        <button class="button button-outline" id="pauseButton">Pause record</button>
+    </div>
+
+    <div class="container mt-2">
+        <ol id="recordingsList"></ol>
+    </div>
+    <script type=text/javascript src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
